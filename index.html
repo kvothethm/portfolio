@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeff's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/2ae6d71e45.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav class="header-menu">
+            <img src="images/logo1.png" class="logo">
+            <ul id="side-menu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li> 
+                <i class="fas fa-circle-xmark" onclick="closeMenu()"></i>               
+            </ul>
+            <i class="fas fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web Developer / Software Developer</p>
+            <h1>Hello, I'm <span>Jeff</span> Cook<br>from Washington State.</h1>
+        </div>        
+    </div>    
+</div>
+
+<!-- ------------------About-------------- -->
+
+<div id="about">
+    <div class="container">
+        <nav class="about-menu">            
+            <ul id="side-menu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li> 
+                <i class="fas fa-circle-xmark" onclick="closeMenu()"></i>               
+            </ul>
+            <i class="fas fa-bars" onclick="openMenu()"></i>
+        </nav>
+    <div class="row">
+        <div class="about-col-1">
+            <img src="images/user.png">
+        </div>
+        <div class="about-col-2">
+            <h1 class="subtitle">About Me</h1>
+            <p>
+                My name is Jeff, and I have recently earned a Bachelor's Degree in Computer Science from The Evergreen State College. 
+                I am transitioning to tech after a 20-year career in the U.S. Army as a Human Intelligence Collector. Since graduating, 
+                I have been working as a Web Developer Intern at Evergreen. I work on the EDURange project writing React and 
+                Flask code to create forms, databases, and the logic that moves data between them. I have been working with industry
+                standard technologies such as Git, PostgreSQL, Node.js, Nginx, and, of course, HTML, CSS, and JavaScript. 
+            </p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                <p class="tab-links" onclick="openTab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                    <li><span>Web Development</span><br>Web Application Development</li>
+                    <li><span>Software Development</span><br>Building Software / Applications</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>2024 - Current</span><br>Front End Developer Intern at Evergreen State College</li>
+                    <li><span>2000 - 2020</span><br>Enlisted HUMINT Collector in the U.S. Army</li>                    
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2024</span><br>BS in Computer Science from Evergreen State College, Olympia, WA</li>
+                    <li><span>2018</span><br>AS in Military Intelligence Studies from Cochise Community College, Sierra Vista, AZ</li>                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!--------------Services---------------->
+
+<div id="services">
+    <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-octopus-deploy"></i>
+                <h2>Web Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sapiente eos dignissimos dicta magni corrupti aliquam non a, consectetur totam rem explicabo in cupiditate nobis at impedit. Quia, quidem sequi!</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-octopus-deploy"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sapiente eos dignissimos dicta magni corrupti aliquam non a, consectetur totam rem explicabo in cupiditate nobis at impedit. Quia, quidem sequi!</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-octopus-deploy"></i>
+                <h2>Software Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sapiente eos dignissimos dicta magni corrupti aliquam non a, consectetur totam rem explicabo in cupiditate nobis at impedit. Quia, quidem sequi!</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------------Portfolio--------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Word Game App</h3>
+                    <p>Showcase JavaScript Language Skills</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Pet Shop Store App</h3>
+                    <p>Showcase React Skills</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Game of Life</h3>
+                    <p>Showcase Java Language Skills</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!---------------Contact---------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> j.a.cook92907@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> (253) 312-1019</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/jeffcook82/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/kvothethm"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="documents/Jeffrey_Cook_Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Jeff Cook. Made by me!</p>
+    </div>
+
+</div>
+    
+<script>
+    const tablinks = document.getElementsByClassName("tab-links");
+    const tabcontents = document.getElementsByClassName("tab-contents");
+
+    function openTab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    const sideMenu = document.getElementById("side-menu");
+
+    function openMenu(){
+        sideMenu.style.right = "0";
+    }
+
+    function closeMenu(){
+        sideMenu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwmEYyDLp6u1CEzSEU3oLpfTJAfm9x1_knGBbqumLsbS8cnt1OQ6KjIGc_1U08cd0GY/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Thank You For Your Submission!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000);
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    });
+  </script>
+
+</body>
+</html>
+
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus in nam quaerat incidunt labore quasi atque facilis, maxime architecto temporibus, ea voluptates iure ut recusandae reprehenderit blanditiis tempore repellendus? Nulla.</p>
