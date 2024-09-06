@@ -13,6 +13,30 @@ body{
     color: white;
 }
 
+nav .fa-chevron-up{
+    display: inline-block;
+    padding-top: 5px;
+    font-size: 25px;
+    color: white;    
+    cursor: pointer; 
+    transition: transform 0.5s;   
+}
+
+nav .fa-chevron-up:hover{
+    color:#A4E595;
+    transform: scale(1.5);
+
+}
+
+.back-button{
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a{
+    text-decoration: none;
+}
+
 #header{
     width: 100%;
     height: 100vh;
