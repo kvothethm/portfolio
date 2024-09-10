@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;    
     box-sizing: border-box;
+    font-family: Consolas;
 }
 
 html{
@@ -13,24 +14,36 @@ body{
     color: white;
 }
 
-nav .fa-chevron-up{
-    display: inline-block;
-    padding-top: 5px;
-    font-size: 25px;
-    color: white;    
-    cursor: pointer; 
-    transition: transform 0.5s;   
-}
-
-nav .fa-chevron-up:hover{
-    color:#A4E595;
-    transform: scale(1.5);
-
-}
-
 .back-button{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.back-button-link{
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;    
+    color: white;
+    text-decoration: none;
+    cursor: pointer; 
+    padding-top: 5px;        
+}
+
+.fa-chevron-up{
+    display: inline-block;    
+    color: white;
+    font-size: 25px;
+           
+}
+
+.back-button-text{
+    font-size: 16px;
+}
+
+.subtitle-box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
 }
 
 nav a{
@@ -49,11 +62,15 @@ nav a{
     padding: 10px 10%;
 }
 
-.header-menu{
+.menu{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    
+}
+
+.menu-item{
+    font-size: 25px;
 }
 
 .logo{
@@ -180,7 +197,7 @@ nav ul li a:hover::after{
 }
 
 .tab-contents ul li span{
-    color: #67a05a;
+    color: #A4E595;
     font-size: 14px;
 }
 
@@ -408,7 +425,8 @@ form .btn2{
 
 /*---------CSS For small screen----------*/
 
-nav .fas{
+.menu-open,
+.menu-close{
     display: none;
 }
 
@@ -425,18 +443,28 @@ nav .fas{
     .header-text h1{
         font-size: 30px;
     }
+    
+    .back-button{
+        display: none;
+    }
 
-    nav .fas{
+    .menu-open,
+    .menu-close{
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        color: white;
         display: block;
-        font-size: 25px;        
+        font-size: 25px;
+        outline: none;  
     }
 
     nav ul{
         background: #67a05a;
         position: fixed;
         top: 0;
-        right: -200px;
-        width: 200px;
+        right: -175px;
+        width: 175px;
         height: 100vh;
         padding-top: 50px; 
         z-index: 2;
@@ -447,7 +475,7 @@ nav .fas{
         margin: 25px;
     }
 
-    nav ul .fas{
+    .menu-close .fas{
         position: absolute;
         top: 25px;
         left: 25px;
